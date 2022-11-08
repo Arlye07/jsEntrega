@@ -122,7 +122,7 @@ if (logueo){
           //filter
 let filtro= prompt("Ingresa la practica, en la especialidad que asignaste")
 const encontrado = practicas.filter((practicas)=> {
-  return practicas.nombre.includes (filtro)
+  return practicas.nombre.includes(filtro.toLowerCase())
 } )
 console.log("Elegiste " + filtro);
 console.log(encontrado);
@@ -135,7 +135,7 @@ const filtrado = practicas.filter((practica)=>{
 } )
 
             console.log(filtrado);
-            alert("Elegiste  " + filtros);
+            alert("Elegiste $" + filtros);
             break
      }  opcion= prompt ("Le gustaria seguir ? \n Elegi una opcion: \n1 -Scores \n2 -Usar scores acumulados \n3 -Agregar \n4 -Turno \n5 -Busca practica por nombre  \n6 -Buscar practica por precio \n -Presiona z para finalizar.")
     }
